@@ -1,0 +1,11 @@
+/Users/helena.franczak/RiderProjects/yatzy/yatzy/bin/Debug/netcoreapp2.2/yatzy.deps.json
+/Users/helena.franczak/RiderProjects/yatzy/yatzy/bin/Debug/netcoreapp2.2/yatzy.runtimeconfig.json
+/Users/helena.franczak/RiderProjects/yatzy/yatzy/bin/Debug/netcoreapp2.2/yatzy.runtimeconfig.dev.json
+/Users/helena.franczak/RiderProjects/yatzy/yatzy/bin/Debug/netcoreapp2.2/yatzy.dll
+/Users/helena.franczak/RiderProjects/yatzy/yatzy/bin/Debug/netcoreapp2.2/yatzy.pdb
+/Users/helena.franczak/RiderProjects/yatzy/yatzy/obj/Debug/netcoreapp2.2/yatzy.csprojAssemblyReference.cache
+/Users/helena.franczak/RiderProjects/yatzy/yatzy/obj/Debug/netcoreapp2.2/yatzy.csproj.CoreCompileInputs.cache
+/Users/helena.franczak/RiderProjects/yatzy/yatzy/obj/Debug/netcoreapp2.2/yatzy.AssemblyInfoInputs.cache
+/Users/helena.franczak/RiderProjects/yatzy/yatzy/obj/Debug/netcoreapp2.2/yatzy.AssemblyInfo.cs
+/Users/helena.franczak/RiderProjects/yatzy/yatzy/obj/Debug/netcoreapp2.2/yatzy.dll
+/Users/helena.franczak/RiderProjects/yatzy/yatzy/obj/Debug/netcoreapp2.2/yatzy.pdb
