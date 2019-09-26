@@ -5,44 +5,56 @@ namespace yatzy
 {
     public class Game
     {
-        // private Player player;
-        // private List<ICategory> categories; 
+        private readonly Player _player;
+        private List<ICategory> categories;
+        private readonly GameMessenger _messenger;
 
-        Game(Player player)
+        public Game(Player player, GameMessenger messenger)
         {
-            // this.player = player;
-            // categories = new List(){
-            // new YatzyCategiory(), bnew TwoInOneCategory()}
+            _messenger = messenger;
+            this._player = player;
+            categories = new List<ICategory>()
+            {
+                new YatzyCategory(), new PairCategory()
+            };
         }
-        private int rollcount = 3;
-        public List<int> resultList = new List<int>();
 
-        public void start()
+        private List<int> _rolledDiceNumbers;
+
+        public void Start()
         {
-            // var firstRoll = Roll();
-            // player.updateAvailableCategories(categories);
-            // var heldNumbers = player.hold(firstRoll)
-            // var secondRoll = Roll(heldNumbers);
-            // Or
-            // var newSecondRoll = merge secondRoll with heldNumbers
-            // heldNumbers = player.hold(secondRoll)
-            // var thirdRoll = Roll();
-            // heldNumbers = player.hold(thirdRoll)
+            _rolledDiceNumbers = RollWithHeldNumbers(new List<int>());
+            _messenger.DisplayDice(_rolledDiceNumbers);
 
-            // var category = play.chooseCategory(categories);
-            // var score = category.getScore(heldNumbers)
-            // play.updateScore(score)
 
-            // var continue = play.shouldContinue();
-            // if(continue) {
-            // start()
-            //    } else {
-            // Exit()
-        // }
-        
-        //do test firtst for categories
-        
+            for (int i = 0; i < 2; i++)
+            {
+                var heldNumbers = _player.Hold(_rolledDiceNumbers);
+                _rolledDiceNumbers = RollWithHeldNumbers(heldNumbers);
+                _messenger.DisplayDice(_rolledDiceNumbers);
+            }
+
+            var category = _player.ChooseCategory();
+        }
+
+
+        private List<int> RollWithHeldNumbers(List<int> numbersToHold)
+        {
+            var result = new List<int>();
+
+            foreach (var number in numbersToHold)
+            {
+                result.Add(_rolledDiceNumbers[number]);
+            }
+
+            Random newNumber = new Random();
+
+            for (int i = 0; i <= 4 - numbersToHold.Count; i++)
+            {
+                result.Add(newNumber.Next(1, 7));
+            }
+
+            return result;
+        }
     }
-    }
-    
 }

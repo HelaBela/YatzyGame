@@ -9,10 +9,12 @@ namespace yatzy
          
         static void Main(string[] args)
         {
-            // var name = Console.Readline("PLease enter player name");
-            // var player = new Player(name)
-            // var game = new Game(player)
-            //game.start()
+            
+            Console.WriteLine("PLease enter your name");
+            var name = Console.ReadLine();
+            var player = new Player(name);
+            var game = new Game(player, new GameMessenger());
+            game.Start();
 
         }
     }
