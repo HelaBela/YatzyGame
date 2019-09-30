@@ -1,0 +1,17 @@
+/Users/helena.franczak/RiderProjects/yatzy/YatzyTest/bin/Debug/netcoreapp2.2/NUnit3.TestAdapter.dll
+/Users/helena.franczak/RiderProjects/yatzy/YatzyTest/bin/Debug/netcoreapp2.2/NUnit3.TestAdapter.pdb
+/Users/helena.franczak/RiderProjects/yatzy/YatzyTest/bin/Debug/netcoreapp2.2/nunit.engine.netstandard.dll
+/Users/helena.franczak/RiderProjects/yatzy/YatzyTest/bin/Debug/netcoreapp2.2/YatzyTest.deps.json
+/Users/helena.franczak/RiderProjects/yatzy/YatzyTest/bin/Debug/netcoreapp2.2/YatzyTest.runtimeconfig.json
+/Users/helena.franczak/RiderProjects/yatzy/YatzyTest/bin/Debug/netcoreapp2.2/YatzyTest.runtimeconfig.dev.json
+/Users/helena.franczak/RiderProjects/yatzy/YatzyTest/bin/Debug/netcoreapp2.2/YatzyTest.dll
+/Users/helena.franczak/RiderProjects/yatzy/YatzyTest/bin/Debug/netcoreapp2.2/YatzyTest.pdb
+/Users/helena.franczak/RiderProjects/yatzy/YatzyTest/bin/Debug/netcoreapp2.2/yatzy.dll
+/Users/helena.franczak/RiderProjects/yatzy/YatzyTest/bin/Debug/netcoreapp2.2/yatzy.pdb
+/Users/helena.franczak/RiderProjects/yatzy/YatzyTest/obj/Debug/netcoreapp2.2/YatzyTest.csprojAssemblyReference.cache
+/Users/helena.franczak/RiderProjects/yatzy/YatzyTest/obj/Debug/netcoreapp2.2/YatzyTest.csproj.CoreCompileInputs.cache
+/Users/helena.franczak/RiderProjects/yatzy/YatzyTest/obj/Debug/netcoreapp2.2/YatzyTest.AssemblyInfoInputs.cache
+/Users/helena.franczak/RiderProjects/yatzy/YatzyTest/obj/Debug/netcoreapp2.2/YatzyTest.AssemblyInfo.cs
+/Users/helena.franczak/RiderProjects/yatzy/YatzyTest/obj/Debug/netcoreapp2.2/YatzyTest.csproj.CopyComplete
+/Users/helena.franczak/RiderProjects/yatzy/YatzyTest/obj/Debug/netcoreapp2.2/YatzyTest.dll
+/Users/helena.franczak/RiderProjects/yatzy/YatzyTest/obj/Debug/netcoreapp2.2/YatzyTest.pdb

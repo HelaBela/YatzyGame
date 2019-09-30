@@ -23,6 +23,7 @@
         <e p="PairCategory.cs" t="Include" />
         <e p="Player.cs" t="Include" />
         <e p="Program.cs" t="Include" />
+        <e p="TwoPairsCategory.cs" t="Include" />
         <e p="yatzy.csproj" t="IncludeRecursive" />
         <e p="YatzyCategory.cs" t="Include" />
       </e>
@@ -38,6 +39,8 @@
             </e>
           </e>
         </e>
+        <e p="PairCategoryTest.cs" t="Include" />
+        <e p="TwoPairsCategoryTest.cs" t="Include" />
         <e p="YatzyCategoryTests.cs" t="Include" />
         <e p="YatzyTest.csproj" t="IncludeRecursive" />
       </e>

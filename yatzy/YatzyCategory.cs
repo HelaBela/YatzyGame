@@ -1,24 +1,24 @@
+using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace yatzy
 {
-    public class YatzyCategory: ICategory
+    public class YatzyCategory : ICategory
     {
         public int CalculateScore(List<int> finalDiceNumbers)
         {
-          //  finalDiceNumbers = Game.ResultListFromSecondRoll;
-            
-            foreach (var number in finalDiceNumbers)
+            if (finalDiceNumbers == null)
             {
-                if (true)
-                {
-                    return 50;
-                }
-
+                throw new Exception("There are no dice numbers to work with");
             }
 
-            return 0;
+            var numberOfDice = finalDiceNumbers.Distinct().Count();
 
+            if (numberOfDice == 1)
+                return 50;
+
+            return 0;
         }
     }
 }

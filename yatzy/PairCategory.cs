@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace yatzy
 {
@@ -6,22 +8,22 @@ namespace yatzy
     {
         public int CalculateScore(List<int> finalDiceNumbers)
         {
-           // finalDiceNumbers = Game.ResultListFromSecondRoll;
-            int sum = 0;
+            if (finalDiceNumbers == null)
+            {
+                throw new ArgumentNullException(nameof(finalDiceNumbers));
+            }
 
+            var pair = finalDiceNumbers.GroupBy(x => x)
+                .Where(s => s.Count() > 1)
+                .OrderByDescending(o=> o.Key)
+                .FirstOrDefault()?.Key;
 
-//            for (int i = 1; i <= 6; i++)
-//            {
-//                int Count = 0;
-//                for (int j = 0; j < 5; j++)
-//                {
-//                    if (finalDiceNumbers[j] == i)
-//                        Count++;
-//                }
-//            }
+            if (pair != null)
+            {
+                return pair.Value * 2;
+            }
 
-            return 40;
+            return 0;
         }
     }
 }
-

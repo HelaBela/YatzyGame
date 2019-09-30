@@ -19,7 +19,7 @@ namespace yatzy
             };
         }
 
-        private List<int> _rolledDiceNumbers;
+        public static List<int> _rolledDiceNumbers;
 
         public void Start()
         {
@@ -35,6 +35,7 @@ namespace yatzy
             }
 
             var category = _player.ChooseCategory();
+            
         }
 
 
