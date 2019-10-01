@@ -6,6 +6,8 @@ namespace yatzy
 {
     public class TwoPairsCategory : ICategory
     {
+        public string Name => "Two Pairs";
+
         public int CalculateScore(List<int> finalDiceNumbers)
         {
             var result = 0;
@@ -24,7 +26,7 @@ namespace yatzy
             {
                 foreach (var number in fours)
                 {
-                    result = 2 * (number * number);
+                    result = 2 * (number + number);
                 }
 
                 return result;
@@ -36,7 +38,7 @@ namespace yatzy
             {
                 foreach (var number in pair)
                 {
-                    result += number * number;
+                    result += number + number;
                 }
 
                 return result;

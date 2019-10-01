@@ -13,7 +13,7 @@ namespace yatzy
             Console.WriteLine("PLease enter your name");
             var name = Console.ReadLine();
             var player = new Player(name);
-            var game = new Game(player, new GameMessenger());
+            var game = new Game(player);
             game.Start();
 
         }

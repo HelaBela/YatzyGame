@@ -59,7 +59,7 @@ namespace YatzyTest
             var score = twoPairs.CalculateScore(finalDice);
             //Assert
             
-            Assert.AreEqual(13, score);
+            Assert.AreEqual(10, score);
         }
         
             
@@ -74,7 +74,7 @@ namespace YatzyTest
             var score = twoPairs.CalculateScore(finalDice);
             //Assert
             
-            Assert.AreEqual(10, score);
+            Assert.AreEqual(8, score);
         }
         
               
@@ -89,7 +89,7 @@ namespace YatzyTest
             var score = twoPairs.CalculateScore(finalDice);
             //Assert
             
-            Assert.AreEqual(18, score);
+            Assert.AreEqual(12, score);
         }
 
         

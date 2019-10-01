@@ -17,8 +17,8 @@
           <e p="TwoPairsCategory.cs" t="Include" />
           <e p="YatzyCategory.cs" t="Include" />
         </e>
+        <e p="CategoryProvider.cs" t="Include" />
         <e p="Game.cs" t="Include" />
-        <e p="GameMessenger.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp2.2" t="Include">

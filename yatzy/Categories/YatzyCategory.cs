@@ -6,6 +6,8 @@ namespace yatzy
 {
     public class YatzyCategory : ICategory
     {
+        public string Name => "Yatzy";
+
         public int CalculateScore(List<int> finalDiceNumbers)
         {
             if (finalDiceNumbers == null)

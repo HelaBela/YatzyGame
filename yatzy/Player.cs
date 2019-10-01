@@ -6,25 +6,26 @@ namespace yatzy
 {
     public class Player
     {
-        public string Name { get;  }
+        public string Name { get; }
         public int Score { get; private set; }
 
         public Player(string name)
         {
             Name = name;
-
         }
 
         public void UpdateScore(int score)
         {
             Score = score;
-            
+
             //"this is your final score... "
         }
 
         public List<int> Hold(List<int> rollResults)
         {
-            Console.WriteLine("choose index number 0-5 of numbers you want to hold separated with a coma"); //use IOservice instead of Console.Write.
+            DisplayDice(rollResults);
+            Console.WriteLine(
+                "choose index number 0-5 of numbers you want to hold separated with a coma"); //use IOservice instead of Console.Write.
 
             var numbersToHold = new List<int>();
 
@@ -41,46 +42,43 @@ namespace yatzy
         }
 
 
-        public ICategory ChooseCategory( List<ICategory> usedCategories, List<int> rolledDice)
+        public ICategory ChooseCategory(List<ICategory> availableCategories, List<int> rolledDice)
         {
-            // Console.Write(rolledDice); -> show the dice to user here from GameMessagnger and delete the class
-            
-            Console.WriteLine(
-                "choose which category you want to use to count your score: " +
-                "'1' for Yatzy" +
-                "'2' for Pair Category" +
-                "'3' for Two Pairs Category");
-            
-           
+            DisplayDice(rolledDice);
 
-            var userChoice = int.Parse(Console.ReadLine());
-            var yatzyCat = 1;
-            var pairCat = 2;
-            var twoPairsCat = 3;
-            
-           //if(Game.UsedCategories) ->make this a parameter
-            
+            Console.WriteLine("choose which category you want to use to count your score: ");
 
-            if (userChoice == yatzyCat)
+            for (int i = 0; i < availableCategories.Count; i++)
             {
-                return new YatzyCategory();
-            }
-
-            if (userChoice == pairCat)
-            {
-                return new PairCategory();
+                Console.WriteLine($"{i}: {availableCategories[i].Name}");
             }
             
-            if (userChoice!= pairCat || userChoice != yatzyCat || userChoice != twoPairsCat)
+            ICategory category = null;
+            while (category == null)
             {
-                
-                Console.WriteLine("Wrong choice. Try again.");
+                var userChoice = int.Parse(Console.ReadLine());
+                if (userChoice >= 0 && userChoice < availableCategories.Count)
+                {
+                    category = availableCategories[userChoice];
+                }
+                else
+                {
+                    Console.WriteLine("Wrong choice. Try again.");
+                }
             }
             
-            return new TwoPairsCategory();
-
+            return category;
         }
 
-       
+
+        public void DisplayDice(List<int> rollResults)
+        {
+            Console.WriteLine("Here are your numbers: ");
+
+            foreach (var number in rollResults)
+            {
+                Console.WriteLine($"{number}");
+            }
+        }
     }
 }

@@ -6,6 +6,7 @@ namespace yatzy
 {
     public class PairCategory : ICategory
     {
+        public string Name => "Pair";
         public int CalculateScore(List<int> finalDiceNumbers)
         {
             if (finalDiceNumbers == null)
