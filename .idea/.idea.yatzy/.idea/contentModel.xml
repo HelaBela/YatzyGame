@@ -10,9 +10,15 @@
       <e p="packages" t="ExcludeRecursive" />
       <e p="yatzy" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Categories" t="Include">
+          <e p="ICategory.cs" t="Include" />
+          <e p="PairCategory.cs" t="Include" />
+          <e p="ThreeOfAKindCategory.cs" t="Include" />
+          <e p="TwoPairsCategory.cs" t="Include" />
+          <e p="YatzyCategory.cs" t="Include" />
+        </e>
         <e p="Game.cs" t="Include" />
         <e p="GameMessenger.cs" t="Include" />
-        <e p="ICategory.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp2.2" t="Include">
@@ -20,16 +26,19 @@
             </e>
           </e>
         </e>
-        <e p="PairCategory.cs" t="Include" />
         <e p="Player.cs" t="Include" />
         <e p="Program.cs" t="Include" />
-        <e p="TwoPairsCategory.cs" t="Include" />
+        <e p="TotalScoreKeeper.cs" t="Include" />
         <e p="yatzy.csproj" t="IncludeRecursive" />
-        <e p="YatzyCategory.cs" t="Include" />
       </e>
       <e p="yatzy.sln" t="IncludeFlat" />
       <e p="YatzyTest" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="category tests" t="Include">
+          <e p="PairCategoryTest.cs" t="Include" />
+          <e p="TwoPairsCategoryTest.cs" t="Include" />
+          <e p="YatzyCategoryTests.cs" t="Include" />
+        </e>
         <e p="GameTests.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -39,9 +48,6 @@
             </e>
           </e>
         </e>
-        <e p="PairCategoryTest.cs" t="Include" />
-        <e p="TwoPairsCategoryTest.cs" t="Include" />
-        <e p="YatzyCategoryTests.cs" t="Include" />
         <e p="YatzyTest.csproj" t="IncludeRecursive" />
       </e>
     </e>

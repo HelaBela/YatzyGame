@@ -8,6 +8,8 @@ namespace yatzy
         private readonly Player _player;
         private List<ICategory> categories;
         private readonly GameMessenger _messenger;
+        public  List<ICategory> UsedCategories; //this has to be on game
+        //can this be public? How about the static complained from the Player Class?
 
         public Game(Player player, GameMessenger messenger)
         {
@@ -15,11 +17,13 @@ namespace yatzy
             this._player = player;
             categories = new List<ICategory>()
             {
-                new YatzyCategory(), new PairCategory()
+                new YatzyCategory(), new PairCategory(), new TwoPairsCategory()
             };
+            
+            UsedCategories = new List<ICategory>();
         }
 
-        public static List<int> _rolledDiceNumbers;
+        private static List<int> _rolledDiceNumbers; //tomorrow... this should go to player, coz its a responsibility of player ot rememeber the rolled dice result
 
         public void Start()
         {
@@ -27,15 +31,46 @@ namespace yatzy
             _messenger.DisplayDice(_rolledDiceNumbers);
 
 
+            RollDice();
+
+            var category = _player.ChooseCategory(); // check if this category was not used. Dont trust the player
+            
+            UsedCategories.Add(category); //can be a map of player and used cat. UsedCatByPlayer.Key:playername Value: catList
+            
+            var score = GetCategoryScore(category);
+            Console.WriteLine($"Here is your score: {score}");
+            _player.UpdateScore(TotalScore(category));
+        }
+
+        private void RollDice()
+        {
             for (int i = 0; i < 2; i++)
             {
                 var heldNumbers = _player.Hold(_rolledDiceNumbers);
                 _rolledDiceNumbers = RollWithHeldNumbers(heldNumbers);
-                _messenger.DisplayDice(_rolledDiceNumbers);
+                _messenger.DisplayDice(_rolledDiceNumbers);//this will happen on player
             }
+        }
 
-            var category = _player.ChooseCategory();
+
+        private int TotalScore(ICategory category) // the score should be tided to player. Game will update the score.player.getScore
+        {
             
+            var totalScore = 0;
+
+            foreach (var usedCategory in UsedCategories)
+            {
+                totalScore += GetCategoryScore(usedCategory);
+            }
+            
+            return totalScore; //player.updateScore and tell player this is your score:
+        }
+
+        private int GetCategoryScore(ICategory category)
+        {
+            var score = category.CalculateScore(_rolledDiceNumbers);
+
+            return score;
         }
 
 

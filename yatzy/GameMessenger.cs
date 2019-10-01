@@ -5,7 +5,8 @@ namespace yatzy
 {
     public class GameMessenger
     {
-        public void DisplayDice(List<int> rollResults)
+        public void DisplayDice(List<int> rollResults) //I might not need this class. In the future , more advanced way
+        //would be to make this a middle men between game and player
         {
             Console.WriteLine("Here are your numbers: ");
 

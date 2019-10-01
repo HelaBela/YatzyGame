@@ -2,20 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c713eec2-c2d5-45de-8e91-c4912f7cc84f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/YatzyTest/PairCategoryTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/YatzyTest/TwoPairsCategoryTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yatzy/TwoPairsCategory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yatzy/Categories/ThreeOfAKindCategory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yatzy/TotalScoreKeeper.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.yatzy/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.yatzy/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.yatzy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.yatzy/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YatzyTest/YatzyCategoryTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/YatzyTest/YatzyCategoryTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YatzyTest/YatzyTest.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/YatzyTest/YatzyTest.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YatzyTest/obj/Debug/netcoreapp2.2/YatzyTest.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/YatzyTest/obj/Debug/netcoreapp2.2/YatzyTest.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YatzyTest/obj/YatzyTest.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/YatzyTest/obj/YatzyTest.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YatzyTest/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/YatzyTest/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YatzyTest/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/YatzyTest/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YatzyTest/PairCategoryTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/YatzyTest/category tests/PairCategoryTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YatzyTest/TwoPairsCategoryTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/YatzyTest/category tests/TwoPairsCategoryTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YatzyTest/YatzyCategoryTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/YatzyTest/category tests/YatzyCategoryTests.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yatzy/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/yatzy/Game.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yatzy/PairCategory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/yatzy/PairCategory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yatzy/YatzyCategory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/yatzy/YatzyCategory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yatzy/GameMessenger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/yatzy/GameMessenger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yatzy/ICategory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/yatzy/Categories/ICategory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yatzy/PairCategory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/yatzy/Categories/PairCategory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yatzy/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/yatzy/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yatzy/TwoPairsCategory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/yatzy/Categories/TwoPairsCategory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yatzy/YatzyCategory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/yatzy/Categories/YatzyCategory.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yatzy/bin/Debug/netcoreapp2.2/yatzy.dll" beforeDir="false" afterPath="$PROJECT_DIR$/yatzy/bin/Debug/netcoreapp2.2/yatzy.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yatzy/bin/Debug/netcoreapp2.2/yatzy.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/yatzy/bin/Debug/netcoreapp2.2/yatzy.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yatzy/obj/Debug/netcoreapp2.2/yatzy.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/yatzy/obj/Debug/netcoreapp2.2/yatzy.csproj.CoreCompileInputs.cache" afterDir="false" />
@@ -30,29 +30,105 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/yatzy/Game.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="21" column="50" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="50" />
+            <state relative-caret-position="654">
+              <caret line="68" column="10" lean-forward="true" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
               <folding>
-                <marker date="1569811028178" expanded="true" signature="6:47" ph="..." />
-                <marker date="1569811028178" expanded="true" signature="64:1573" ph="{...}" />
-                <marker date="1569811028178" expanded="true" signature="88:1571" ph="{...}" />
-                <marker date="1569811028178" expanded="true" signature="291:514" ph="{...}" />
-                <marker date="1569811028178" expanded="true" signature="432:503" ph="{...}" />
-                <marker date="1569811028178" expanded="true" signature="596:1079" ph="{...}" />
-                <marker date="1569811028178" expanded="true" signature="775:1002" ph="{...}" />
-                <marker date="1569811028178" expanded="true" signature="1152:1565" ph="{...}" />
-                <marker date="1569811028178" expanded="true" signature="1255:1339" ph="{...}" />
-                <marker date="1569811028178" expanded="true" signature="1449:1527" ph="{...}" />
+                <marker date="1569907483476" expanded="true" signature="6:47" ph="..." />
+                <marker date="1569907483476" expanded="true" signature="64:3033" ph="{...}" />
+                <marker date="1569907483476" expanded="true" signature="88:3031" ph="{...}" />
+                <marker date="1569907483476" expanded="true" signature="449:761" ph="{...}" />
+                <marker date="1569907483476" expanded="true" signature="590:685" ph="{...}" />
+                <marker date="1569907483476" expanded="true" signature="955:1567" ph="{...}" />
+                <marker date="1569907483476" expanded="true" signature="1600:1915" ph="{...}" />
+                <marker date="1569907483476" expanded="true" signature="1650:1905" ph="{...}" />
+                <marker date="1569907483476" expanded="true" signature="2051:2365" ph="{...}" />
+                <marker date="1569907483476" expanded="true" signature="2164:2254" ph="{...}" />
+                <marker date="1569907483476" expanded="true" signature="2423:2539" ph="{...}" />
+                <marker date="1569907483476" expanded="true" signature="2612:3025" ph="{...}" />
+                <marker date="1569907483476" expanded="true" signature="2715:2799" ph="{...}" />
+                <marker date="1569907483476" expanded="true" signature="2909:2987" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yatzy/ICategory.cs">
+        <entry file="file://$PROJECT_DIR$/yatzy/GameMessenger.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="7" column="53" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="53" />
+              <folding>
+                <marker date="1569907483479" expanded="false" signature="6:47" ph="..." />
+                <marker date="1569907483479" expanded="true" signature="64:503" ph="{...}" />
+                <marker date="1569907483479" expanded="true" signature="97:501" ph="{...}" />
+                <marker date="1569907483479" expanded="true" signature="159:292" ph="/* I might not need this class. In the future , more advanced way ... */" />
+                <marker date="1569907483479" expanded="true" signature="292:495" ph="{...}" />
+                <marker date="1569907483479" expanded="true" signature="409:485" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yatzy/Player.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="143">
+              <caret line="45" column="112" selection-start-line="45" selection-start-column="112" selection-end-line="45" selection-end-column="112" />
+              <folding>
+                <marker date="1569907483474" expanded="true" signature="6:66" ph="..." />
+                <marker date="1569907483474" expanded="true" signature="83:2264" ph="{...}" />
+                <marker date="1569907483474" expanded="true" signature="109:2262" ph="{...}" />
+                <marker date="1569907483474" expanded="true" signature="235:281" ph="{...}" />
+                <marker date="1569907483474" expanded="true" signature="325:430" ph="{...}" />
+                <marker date="1569907483474" expanded="true" signature="484:1010" ph="{...}" />
+                <marker date="1569907483474" expanded="true" signature="883:965" ph="{...}" />
+                <marker date="1569907483474" expanded="true" signature="1107:2247" ph="{...}" />
+                <marker date="1569907483474" expanded="true" signature="1783:1855" ph="{...}" />
+                <marker date="1569907483474" expanded="true" signature="1895:1966" ph="{...}" />
+                <marker date="1569907483474" expanded="true" signature="2072:2180" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yatzy/TotalScoreKeeper.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="59" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="59" />
+              <folding>
+                <marker date="1569891963559" expanded="true" signature="50:553" ph="{...}" />
+                <marker date="1569891963559" expanded="true" signature="86:551" ph="{...}" />
+                <marker date="1569891963559" expanded="true" signature="179:355" ph="{...}" />
+                <marker date="1569891963559" expanded="true" signature="249:344" ph="{...}" />
+                <marker date="1569891963559" expanded="true" signature="407:544" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/YatzyTest/category tests/YatzyCategoryTests.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="15" column="71" selection-start-line="13" selection-start-column="11" selection-end-line="15" selection-end-column="71" />
+              <folding>
+                <marker date="1569824347976" expanded="false" signature="6:109" ph="..." />
+                <marker date="1569824347976" expanded="true" signature="130:1152" ph="{...}" />
+                <marker date="1569824347976" expanded="true" signature="168:1150" ph="{...}" />
+                <marker date="1569824347976" expanded="true" signature="243:387" ph="{...}" />
+                <marker date="1569824347976" expanded="true" signature="458:765" ph="{...}" />
+                <marker date="1569824347976" expanded="true" signature="838:1144" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yatzy/Categories/ICategory.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
               <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
@@ -65,42 +141,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yatzy/YatzyCategory.cs">
+        <entry file="file://$PROJECT_DIR$/YatzyTest/category tests/TwoPairsCategoryTest.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-              <folding>
-                <marker date="1569813504579" expanded="true" signature="6:66" ph="..." />
-                <marker date="1569813504579" expanded="true" signature="83:528" ph="{...}" />
-                <marker date="1569813504579" expanded="true" signature="128:526" ph="{...}" />
-                <marker date="1569813504579" expanded="true" signature="196:520" ph="{...}" />
-                <marker date="1569813504579" expanded="true" signature="248:355" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/YatzyTest/YatzyCategoryTests.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="15" column="71" selection-start-line="13" selection-start-column="11" selection-end-line="15" selection-end-column="71" />
-              <folding>
-                <marker date="1569824347976" expanded="true" signature="6:109" ph="..." />
-                <marker date="1569824347976" expanded="true" signature="130:1152" ph="{...}" />
-                <marker date="1569824347976" expanded="true" signature="168:1150" ph="{...}" />
-                <marker date="1569824347976" expanded="true" signature="243:387" ph="{...}" />
-                <marker date="1569824347976" expanded="true" signature="458:765" ph="{...}" />
-                <marker date="1569824347976" expanded="true" signature="838:1144" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/YatzyTest/TwoPairsCategoryTest.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1170">
+            <state relative-caret-position="526">
               <caret line="81" selection-start-line="81" selection-end-line="81" />
               <folding>
                 <marker date="1569829166307" expanded="false" signature="6:83" ph="..." />
@@ -119,12 +162,26 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yatzy/TwoPairsCategory.cs">
+        <entry file="file://$PROJECT_DIR$/yatzy/Categories/ThreeOfAKindCategory.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="45" column="9" lean-forward="true" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+            <state>
+              <caret column="33" lean-forward="true" selection-start-column="33" selection-end-column="33" />
               <folding>
-                <marker date="1569830567303" expanded="true" signature="6:66" ph="..." />
+                <marker date="1569883460779" expanded="true" signature="50:257" ph="{...}" />
+                <marker date="1569883460779" expanded="true" signature="105:255" ph="{...}" />
+                <marker date="1569883460779" expanded="true" signature="173:249" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yatzy/Categories/TwoPairsCategory.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="645">
+              <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+              <folding>
+                <marker date="1569830567303" expanded="false" signature="6:66" ph="..." />
                 <marker date="1569830567303" expanded="true" signature="83:1115" ph="{...}" />
                 <marker date="1569830567303" expanded="true" signature="131:1113" ph="{...}" />
                 <marker date="1569830567303" expanded="true" signature="199:1107" ph="{...}" />
@@ -139,50 +196,17 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yatzy/PairCategory.cs">
+        <entry file="file://$PROJECT_DIR$/yatzy/Categories/PairCategory.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+            <state relative-caret-position="255">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
               <folding>
-                <marker date="1569825901943" expanded="true" signature="6:66" ph="..." />
+                <marker date="1569825901943" expanded="false" signature="6:66" ph="..." />
                 <marker date="1569825901943" expanded="true" signature="83:675" ph="{...}" />
                 <marker date="1569825901943" expanded="true" signature="127:673" ph="{...}" />
                 <marker date="1569825901943" expanded="true" signature="195:667" ph="{...}" />
                 <marker date="1569825901943" expanded="true" signature="247:350" ph="{...}" />
                 <marker date="1569825901943" expanded="true" signature="567:634" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/YatzyTest/PairCategoryTest.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
-              <caret line="47" column="14" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
-              <folding>
-                <marker date="1569825776011" expanded="true" signature="6:83" ph="..." />
-                <marker date="1569825776011" expanded="true" signature="104:1551" ph="{...}" />
-                <marker date="1569825776011" expanded="true" signature="140:1549" ph="{...}" />
-                <marker date="1569825776011" expanded="true" signature="213:427" ph="{...}" />
-                <marker date="1569825776011" expanded="true" signature="308:334" ph="/* act ... */" />
-                <marker date="1569825776011" expanded="true" signature="493:791" ph="{...}" />
-                <marker date="1569825776011" expanded="true" signature="863:1160" ph="{...}" />
-                <marker date="1569825776011" expanded="true" signature="1245:1543" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/YatzyTest/GameTests.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-              <folding>
-                <marker date="1569481887452" expanded="true" signature="43:182" ph="{...}" />
-                <marker date="1569481887452" expanded="true" signature="72:180" ph="{...}" />
-                <marker date="1569481887452" expanded="true" signature="127:174" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -195,22 +219,24 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/.local/share/Symbols/src/nunit/nunit/4530d6dba175fae6ff8f8ade6c07fd05e6c1c7c5/src/NUnitFramework/framework/Assert.Exceptions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/yatzy/YatzyCategory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/yatzy/TotalScoreKeeper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/yatzy/Categories/YatzyCategory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/yatzy/Player.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/yatzy/ICategory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/yatzy/Categories/ICategory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/yatzy/Game.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/yatzy/Categories/ThreeOfAKindCategory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/yatzy/GameMessenger.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/YatzyTest/TwoPairsCategoryTest.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/yatzy/TwoPairsCategory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/YatzyTest/category tests/TwoPairsCategoryTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/yatzy/Categories/TwoPairsCategory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/.local/share/Symbols/src/nunit/nunit/4530d6dba175fae6ff8f8ade6c07fd05e6c1c7c5/src/NUnitFramework/framework/Internal/Reflect.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/.local/share/Symbols/src/nunit/nunit/4530d6dba175fae6ff8f8ade6c07fd05e6c1c7c5/src/NUnitFramework/framework/Internal/Execution/SimpleWorkItem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/yatzy/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/YatzyTest/YatzyCategoryTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/YatzyTest/category tests/YatzyCategoryTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/YatzyTest/GameTests.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/yatzy/PairCategory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/YatzyTest/PairCategoryTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/yatzy/Categories/PairCategory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/YatzyTest/category tests/PairCategoryTest.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -218,13 +244,11 @@
         <option value="$PROJECT_DIR$/yatzy/Category.cs" />
         <option value="$PROJECT_DIR$/yatzy/ICategory.cs" />
         <option value="$PROJECT_DIR$/yatzy/TwoOfAKindCategory.cs" />
-        <option value="$PROJECT_DIR$/yatzy/Player.cs" />
         <option value="$PROJECT_DIR$/yatzy/GameMessages/.cs" />
         <option value="$PROJECT_DIR$/yatzy/GameMessages.cs" />
         <option value="$PROJECT_DIR$/yatzy/Program.cs" />
         <option value="$PROJECT_DIR$/YatzyTest/UnitTest1.cs" />
         <option value="$PROJECT_DIR$/YatzyTest/GameTests.cs" />
-        <option value="$PROJECT_DIR$/yatzy/Game.cs" />
         <option value="$PROJECT_DIR$/yatzy/YatzyCategory.cs" />
         <option value="$PROJECT_DIR$/YatzyTest/YatzyCategoryTests.cs" />
         <option value="$PROJECT_DIR$/YatzyTest/PairCategoryTest.cs" />
@@ -232,6 +256,12 @@
         <option value="$PROJECT_DIR$/YatzyTest/TwoPairsCategory.cs" />
         <option value="$PROJECT_DIR$/YatzyTest/TwoPairsCategoryTest.cs" />
         <option value="$PROJECT_DIR$/yatzy/TwoPairsCategory.cs" />
+        <option value="$PROJECT_DIR$/yatzy/Categories/ThreeOfAKindCategory.cs" />
+        <option value="$PROJECT_DIR$/yatzy/ScoreKeeper.cs" />
+        <option value="$PROJECT_DIR$/yatzy/TotalScoreKeeper.cs" />
+        <option value="$PROJECT_DIR$/yatzy/GameMessenger.cs" />
+        <option value="$PROJECT_DIR$/yatzy/Player.cs" />
+        <option value="$PROJECT_DIR$/yatzy/Game.cs" />
       </list>
     </option>
   </component>
@@ -242,11 +272,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="314" />
-    <option name="y" value="-1379" />
-    <option name="width" value="2275" />
-    <option name="height" value="1332" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="947" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -272,6 +301,12 @@
               <item name="yatzy" type="24d0babc:SolutionExplorerModelNode" />
               <item name="yatzy" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Dependencies" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="yatzy" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="yatzy" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Categories" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
               <item name="" type="784c90a0:SolutionExplorerRootNode" />
@@ -359,12 +394,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1568938204586</updated>
-      <workItem from="1568938206034" duration="46351000" />
+      <workItem from="1568938206034" duration="56654000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46351000" />
+    <option name="totallyTimeSpent" value="56654000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -376,23 +411,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="314" y="-1379" width="2275" height="1332" extended-state="0" />
+    <frame x="0" y="23" width="1680" height="947" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.18092252" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.17765568" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Unit Tests" order="1" visible="true" weight="0.28951612" />
+      <window_info anchor="bottom" id="Unit Tests" order="1" weight="0.15438597" />
       <window_info anchor="bottom" id="Database Changes" order="2" />
       <window_info anchor="bottom" id="Terminal" order="3" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="5" />
-      <window_info anchor="bottom" id="Build" order="6" weight="0.32983872" />
+      <window_info anchor="bottom" id="Build" order="6" weight="0.32982457" />
       <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="bottom" id="NuGet" order="8" />
       <window_info anchor="bottom" id="Message" order="9" />
       <window_info anchor="bottom" id="Find" order="10" />
-      <window_info anchor="bottom" id="Run" order="11" weight="0.09677419" />
+      <window_info anchor="bottom" id="Run" order="11" weight="0.36959064" />
       <window_info anchor="bottom" id="Debug" order="12" weight="0.22258064" />
       <window_info anchor="bottom" id="Cvs" order="13" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="14" weight="0.4" />
@@ -417,7 +453,7 @@
           <option name="timeStamp" value="1" />
         </breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/yatzy/YatzyCategory.cs</url>
+          <url>file://$PROJECT_DIR$/yatzy/Categories/YatzyCategory.cs</url>
           <line>10</line>
           <properties documentPath="$PROJECT_DIR$/yatzy/YatzyCategory.cs" initialLine="10">
             <startOffsets>
@@ -440,38 +476,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yatzy/Player.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="48" lean-forward="true" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
-          <folding>
-            <marker date="1569480077618" expanded="true" signature="6:66" ph="..." />
-            <marker date="1569480077618" expanded="true" signature="83:1529" ph="{...}" />
-            <marker date="1569480077618" expanded="true" signature="109:1527" ph="{...}" />
-            <marker date="1569480077618" expanded="true" signature="192:237" ph="{...}" />
-            <marker date="1569480077618" expanded="true" signature="247:534" ph="/* public List&lt;int&gt; Hold(List&lt;int&gt; rolledNumbers) ... */" />
-            <marker date="1569480077618" expanded="true" signature="588:1073" ph="{...}" />
-            <marker date="1569480077618" expanded="true" signature="946:1028" ph="{...}" />
-            <marker date="1569480077618" expanded="true" signature="1117:1521" ph="{...}" />
-            <marker date="1569480077618" expanded="true" signature="1394:1466" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yatzy/GameMessenger.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <marker date="1569481189366" expanded="false" signature="6:47" ph="..." />
-            <marker date="1569481189366" expanded="true" signature="64:369" ph="{...}" />
-            <marker date="1569481189366" expanded="true" signature="97:367" ph="{...}" />
-            <marker date="1569481189366" expanded="true" signature="158:361" ph="{...}" />
-            <marker date="1569481189366" expanded="true" signature="275:351" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/yatzy/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -481,17 +485,6 @@
             <marker date="1569481567603" expanded="true" signature="83:432" ph="{...}" />
             <marker date="1569481567603" expanded="true" signature="103:430" ph="{...}" />
             <marker date="1569481567603" expanded="true" signature="159:424" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yatzy/ICategory.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding>
-            <marker date="1569543659407" expanded="true" signature="50:153" ph="{...}" />
-            <marker date="1569543659407" expanded="true" signature="83:151" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -510,12 +503,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yatzy/YatzyCategory.cs">
+    <entry file="file://$PROJECT_DIR$/yatzy/Categories/YatzyCategory.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
+        <state relative-caret-position="120">
           <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
           <folding>
-            <marker date="1569813504579" expanded="true" signature="6:66" ph="..." />
+            <marker date="1569813504579" expanded="false" signature="6:66" ph="..." />
             <marker date="1569813504579" expanded="true" signature="83:528" ph="{...}" />
             <marker date="1569813504579" expanded="true" signature="128:526" ph="{...}" />
             <marker date="1569813504579" expanded="true" signature="196:520" ph="{...}" />
@@ -536,61 +529,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yatzy/Game.cs">
+    <entry file="file://$PROJECT_DIR$/YatzyTest/category tests/PairCategoryTest.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="21" column="50" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="50" />
-          <folding>
-            <marker date="1569811028178" expanded="true" signature="6:47" ph="..." />
-            <marker date="1569811028178" expanded="true" signature="64:1573" ph="{...}" />
-            <marker date="1569811028178" expanded="true" signature="88:1571" ph="{...}" />
-            <marker date="1569811028178" expanded="true" signature="291:514" ph="{...}" />
-            <marker date="1569811028178" expanded="true" signature="432:503" ph="{...}" />
-            <marker date="1569811028178" expanded="true" signature="596:1079" ph="{...}" />
-            <marker date="1569811028178" expanded="true" signature="775:1002" ph="{...}" />
-            <marker date="1569811028178" expanded="true" signature="1152:1565" ph="{...}" />
-            <marker date="1569811028178" expanded="true" signature="1255:1339" ph="{...}" />
-            <marker date="1569811028178" expanded="true" signature="1449:1527" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/YatzyTest/YatzyCategoryTests.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="15" column="71" selection-start-line="13" selection-start-column="11" selection-end-line="15" selection-end-column="71" />
-          <folding>
-            <marker date="1569824347976" expanded="true" signature="6:109" ph="..." />
-            <marker date="1569824347976" expanded="true" signature="130:1152" ph="{...}" />
-            <marker date="1569824347976" expanded="true" signature="168:1150" ph="{...}" />
-            <marker date="1569824347976" expanded="true" signature="243:387" ph="{...}" />
-            <marker date="1569824347976" expanded="true" signature="458:765" ph="{...}" />
-            <marker date="1569824347976" expanded="true" signature="838:1144" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yatzy/PairCategory.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-          <folding>
-            <marker date="1569825901943" expanded="true" signature="6:66" ph="..." />
-            <marker date="1569825901943" expanded="true" signature="83:675" ph="{...}" />
-            <marker date="1569825901943" expanded="true" signature="127:673" ph="{...}" />
-            <marker date="1569825901943" expanded="true" signature="195:667" ph="{...}" />
-            <marker date="1569825901943" expanded="true" signature="247:350" ph="{...}" />
-            <marker date="1569825901943" expanded="true" signature="567:634" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/YatzyTest/PairCategoryTest.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
+        <state relative-caret-position="428">
           <caret line="47" column="14" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
           <folding>
-            <marker date="1569825776011" expanded="true" signature="6:83" ph="..." />
+            <marker date="1569825776011" expanded="false" signature="6:83" ph="..." />
             <marker date="1569825776011" expanded="true" signature="104:1551" ph="{...}" />
             <marker date="1569825776011" expanded="true" signature="140:1549" ph="{...}" />
             <marker date="1569825776011" expanded="true" signature="213:427" ph="{...}" />
@@ -662,27 +606,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yatzy/TwoPairsCategory.cs">
+    <entry file="file://$PROJECT_DIR$/yatzy/Categories/ICategory.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="9" lean-forward="true" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+        <state relative-caret-position="120">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
           <folding>
-            <marker date="1569830567303" expanded="true" signature="6:66" ph="..." />
-            <marker date="1569830567303" expanded="true" signature="83:1115" ph="{...}" />
-            <marker date="1569830567303" expanded="true" signature="131:1113" ph="{...}" />
-            <marker date="1569830567303" expanded="true" signature="199:1107" ph="{...}" />
-            <marker date="1569830567303" expanded="true" signature="280:383" ph="{...}" />
-            <marker date="1569830567303" expanded="true" signature="657:852" ph="{...}" />
-            <marker date="1569830567303" expanded="true" signature="717:805" ph="{...}" />
-            <marker date="1569830567303" expanded="true" signature="886:1074" ph="{...}" />
-            <marker date="1569830567303" expanded="true" signature="945:1028" ph="{...}" />
+            <marker date="1569543659407" expanded="true" signature="50:153" ph="{...}" />
+            <marker date="1569543659407" expanded="true" signature="83:151" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/YatzyTest/TwoPairsCategoryTest.cs">
+    <entry file="file://$PROJECT_DIR$/yatzy/TotalScoreKeeper.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
+        <state relative-caret-position="90">
+          <caret line="6" column="59" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="59" />
+          <folding>
+            <marker date="1569891963559" expanded="true" signature="50:553" ph="{...}" />
+            <marker date="1569891963559" expanded="true" signature="86:551" ph="{...}" />
+            <marker date="1569891963559" expanded="true" signature="179:355" ph="{...}" />
+            <marker date="1569891963559" expanded="true" signature="249:344" ph="{...}" />
+            <marker date="1569891963559" expanded="true" signature="407:544" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YatzyTest/category tests/TwoPairsCategoryTest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
           <caret line="81" selection-start-line="81" selection-end-line="81" />
           <folding>
             <marker date="1569829166307" expanded="false" signature="6:83" ph="..." />
@@ -695,6 +646,124 @@
             <marker date="1569829166307" expanded="true" signature="1363:1689" ph="{...}" />
             <marker date="1569829166307" expanded="true" signature="1799:2125" ph="{...}" />
             <marker date="1569829166307" expanded="true" signature="2229:2555" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yatzy/Categories/PairCategory.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <marker date="1569825901943" expanded="false" signature="6:66" ph="..." />
+            <marker date="1569825901943" expanded="true" signature="83:675" ph="{...}" />
+            <marker date="1569825901943" expanded="true" signature="127:673" ph="{...}" />
+            <marker date="1569825901943" expanded="true" signature="195:667" ph="{...}" />
+            <marker date="1569825901943" expanded="true" signature="247:350" ph="{...}" />
+            <marker date="1569825901943" expanded="true" signature="567:634" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yatzy/Categories/TwoPairsCategory.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+          <folding>
+            <marker date="1569830567303" expanded="false" signature="6:66" ph="..." />
+            <marker date="1569830567303" expanded="true" signature="83:1115" ph="{...}" />
+            <marker date="1569830567303" expanded="true" signature="131:1113" ph="{...}" />
+            <marker date="1569830567303" expanded="true" signature="199:1107" ph="{...}" />
+            <marker date="1569830567303" expanded="true" signature="280:383" ph="{...}" />
+            <marker date="1569830567303" expanded="true" signature="657:852" ph="{...}" />
+            <marker date="1569830567303" expanded="true" signature="717:805" ph="{...}" />
+            <marker date="1569830567303" expanded="true" signature="886:1074" ph="{...}" />
+            <marker date="1569830567303" expanded="true" signature="945:1028" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yatzy/Categories/ThreeOfAKindCategory.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="33" lean-forward="true" selection-start-column="33" selection-end-column="33" />
+          <folding>
+            <marker date="1569883460779" expanded="true" signature="50:257" ph="{...}" />
+            <marker date="1569883460779" expanded="true" signature="105:255" ph="{...}" />
+            <marker date="1569883460779" expanded="true" signature="173:249" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YatzyTest/category tests/YatzyCategoryTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="15" column="71" selection-start-line="13" selection-start-column="11" selection-end-line="15" selection-end-column="71" />
+          <folding>
+            <marker date="1569824347976" expanded="false" signature="6:109" ph="..." />
+            <marker date="1569824347976" expanded="true" signature="130:1152" ph="{...}" />
+            <marker date="1569824347976" expanded="true" signature="168:1150" ph="{...}" />
+            <marker date="1569824347976" expanded="true" signature="243:387" ph="{...}" />
+            <marker date="1569824347976" expanded="true" signature="458:765" ph="{...}" />
+            <marker date="1569824347976" expanded="true" signature="838:1144" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yatzy/Player.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="45" column="112" selection-start-line="45" selection-start-column="112" selection-end-line="45" selection-end-column="112" />
+          <folding>
+            <marker date="1569907483474" expanded="true" signature="6:66" ph="..." />
+            <marker date="1569907483474" expanded="true" signature="83:2264" ph="{...}" />
+            <marker date="1569907483474" expanded="true" signature="109:2262" ph="{...}" />
+            <marker date="1569907483474" expanded="true" signature="235:281" ph="{...}" />
+            <marker date="1569907483474" expanded="true" signature="325:430" ph="{...}" />
+            <marker date="1569907483474" expanded="true" signature="484:1010" ph="{...}" />
+            <marker date="1569907483474" expanded="true" signature="883:965" ph="{...}" />
+            <marker date="1569907483474" expanded="true" signature="1107:2247" ph="{...}" />
+            <marker date="1569907483474" expanded="true" signature="1783:1855" ph="{...}" />
+            <marker date="1569907483474" expanded="true" signature="1895:1966" ph="{...}" />
+            <marker date="1569907483474" expanded="true" signature="2072:2180" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yatzy/GameMessenger.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="53" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="53" />
+          <folding>
+            <marker date="1569907483479" expanded="false" signature="6:47" ph="..." />
+            <marker date="1569907483479" expanded="true" signature="64:503" ph="{...}" />
+            <marker date="1569907483479" expanded="true" signature="97:501" ph="{...}" />
+            <marker date="1569907483479" expanded="true" signature="159:292" ph="/* I might not need this class. In the future , more advanced way ... */" />
+            <marker date="1569907483479" expanded="true" signature="292:495" ph="{...}" />
+            <marker date="1569907483479" expanded="true" signature="409:485" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yatzy/Game.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="654">
+          <caret line="68" column="10" lean-forward="true" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
+          <folding>
+            <marker date="1569907483476" expanded="true" signature="6:47" ph="..." />
+            <marker date="1569907483476" expanded="true" signature="64:3033" ph="{...}" />
+            <marker date="1569907483476" expanded="true" signature="88:3031" ph="{...}" />
+            <marker date="1569907483476" expanded="true" signature="449:761" ph="{...}" />
+            <marker date="1569907483476" expanded="true" signature="590:685" ph="{...}" />
+            <marker date="1569907483476" expanded="true" signature="955:1567" ph="{...}" />
+            <marker date="1569907483476" expanded="true" signature="1600:1915" ph="{...}" />
+            <marker date="1569907483476" expanded="true" signature="1650:1905" ph="{...}" />
+            <marker date="1569907483476" expanded="true" signature="2051:2365" ph="{...}" />
+            <marker date="1569907483476" expanded="true" signature="2164:2254" ph="{...}" />
+            <marker date="1569907483476" expanded="true" signature="2423:2539" ph="{...}" />
+            <marker date="1569907483476" expanded="true" signature="2612:3025" ph="{...}" />
+            <marker date="1569907483476" expanded="true" signature="2715:2799" ph="{...}" />
+            <marker date="1569907483476" expanded="true" signature="2909:2987" ph="{...}" />
           </folding>
         </state>
       </provider>
