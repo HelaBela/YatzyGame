@@ -28,8 +28,7 @@ namespace yatzy
         public List<int> Hold(List<int> rollResults)
         {
             DisplayDice(rollResults);
-            _iConsoleService.Write(
-                "choose index number 0-5 of numbers you want to hold separated with a coma"); 
+            _iConsoleService.Write("choose index number 0-4 of numbers you want to hold separated with a coma"); 
 
             var numbersToHold = new List<int>();
 
@@ -74,8 +73,7 @@ namespace yatzy
             return category;
         }
 
-
-        public void DisplayDice(List<int> rollResults)
+        private void DisplayDice(List<int> rollResults)
         {
             _iConsoleService.Write("Here are your numbers: ");
 

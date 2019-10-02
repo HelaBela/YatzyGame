@@ -62,6 +62,7 @@
             </e>
           </e>
         </e>
+        <e p="PlayerTests.cs" t="Include" />
         <e p="YatzyTest.csproj" t="IncludeRecursive" />
       </e>
     </e>
