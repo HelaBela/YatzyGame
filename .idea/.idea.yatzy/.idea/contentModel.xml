@@ -8,6 +8,20 @@
     <e p="$USER_HOME$/Library/Caches/Rider2019.1/resharper-host/local/Transient/ReSharperHost/v191/SolutionCaches/_yatzy.1532584288.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="packages" t="ExcludeRecursive" />
+      <e p="Utility" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="ConsoleOperations.cs" t="Include" />
+        <e p="IConsoleService.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.2" t="Include">
+              <e p="Utility.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Utility.csproj" t="IncludeRecursive" />
+      </e>
       <e p="yatzy" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="Categories" t="Include">
@@ -36,6 +50,7 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="category tests" t="Include">
           <e p="PairCategoryTest.cs" t="Include" />
+          <e p="ThreeOfAKindCategoryTests.cs" t="Include" />
           <e p="TwoPairsCategoryTest.cs" t="Include" />
           <e p="YatzyCategoryTests.cs" t="Include" />
         </e>

@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yatzy", "yatzy\yatzy.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YatzyTest", "YatzyTest\YatzyTest.csproj", "{8DFFECA7-CC80-474A-A02C-06414C1E3AE4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utility", "Utility\Utility.csproj", "{4D8E5740-7D82-4A2A-BA86-8088B54C8FC8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{8DFFECA7-CC80-474A-A02C-06414C1E3AE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8DFFECA7-CC80-474A-A02C-06414C1E3AE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DFFECA7-CC80-474A-A02C-06414C1E3AE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D8E5740-7D82-4A2A-BA86-8088B54C8FC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D8E5740-7D82-4A2A-BA86-8088B54C8FC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D8E5740-7D82-4A2A-BA86-8088B54C8FC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D8E5740-7D82-4A2A-BA86-8088B54C8FC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

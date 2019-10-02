@@ -1032,7 +1032,15 @@
           }
         }
       },
+      "Utility/1.0.0": {
+        "runtime": {
+          "Utility.dll": {}
+        }
+      },
       "yatzy/1.0.0": {
+        "dependencies": {
+          "Utility": "1.0.0"
+        },
         "runtime": {
           "yatzy.dll": {}
         }
@@ -1541,6 +1549,11 @@
       "sha512": "sha512-91tvfHWHSrYFPolCwWYqbpo1YaoBUCQ3uNZ/O/zr0ev5BnkoATJoie16ywlMVUaXZtfSfNELxhtG3aqpTfwR4w==",
       "path": "system.xml.xpath.xmldocument/4.3.0",
       "hashPath": "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512"
+    },
+    "Utility/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "yatzy/1.0.0": {
       "type": "project",

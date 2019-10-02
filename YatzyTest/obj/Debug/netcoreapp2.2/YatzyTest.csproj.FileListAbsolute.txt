@@ -15,3 +15,5 @@
 /Users/helena.franczak/RiderProjects/yatzy/YatzyTest/obj/Debug/netcoreapp2.2/YatzyTest.csproj.CopyComplete
 /Users/helena.franczak/RiderProjects/yatzy/YatzyTest/obj/Debug/netcoreapp2.2/YatzyTest.dll
 /Users/helena.franczak/RiderProjects/yatzy/YatzyTest/obj/Debug/netcoreapp2.2/YatzyTest.pdb
+/Users/helena.franczak/RiderProjects/yatzy/YatzyTest/bin/Debug/netcoreapp2.2/Utility.dll
+/Users/helena.franczak/RiderProjects/yatzy/YatzyTest/bin/Debug/netcoreapp2.2/Utility.pdb

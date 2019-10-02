@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Utility;
 
 namespace yatzy
 {
@@ -9,9 +10,12 @@ namespace yatzy
         public string Name { get; }
         public int Score { get; private set; }
 
-        public Player(string name)
+        private readonly IConsoleService _iConsoleService;
+
+        public Player(string name, IConsoleService iConsoleService)
         {
             Name = name;
+            _iConsoleService = iConsoleService;
         }
 
         public void UpdateScore(int score)
@@ -24,12 +28,12 @@ namespace yatzy
         public List<int> Hold(List<int> rollResults)
         {
             DisplayDice(rollResults);
-            Console.WriteLine(
-                "choose index number 0-5 of numbers you want to hold separated with a coma"); //use IOservice instead of Console.Write.
+            _iConsoleService.Write(
+                "choose index number 0-5 of numbers you want to hold separated with a coma"); 
 
             var numbersToHold = new List<int>();
 
-            var userAnswer = Console.ReadLine();
+            var userAnswer = _iConsoleService.Read();
 
             List<string> choosenNumbersToHold = userAnswer.Split(",").ToList();
 
@@ -46,24 +50,24 @@ namespace yatzy
         {
             DisplayDice(rolledDice);
 
-            Console.WriteLine("choose which category you want to use to count your score: ");
+            _iConsoleService.Write("choose which category you want to use to count your score: ");
 
             for (int i = 0; i < availableCategories.Count; i++)
             {
-                Console.WriteLine($"{i}: {availableCategories[i].Name}");
+                _iConsoleService.Write($"{i}: {availableCategories[i].Name}");
             }
             
             ICategory category = null;
             while (category == null)
             {
-                var userChoice = int.Parse(Console.ReadLine());
+                var userChoice = int.Parse(_iConsoleService.Read());
                 if (userChoice >= 0 && userChoice < availableCategories.Count)
                 {
                     category = availableCategories[userChoice];
                 }
                 else
                 {
-                    Console.WriteLine("Wrong choice. Try again.");
+                    _iConsoleService.Write("Wrong choice. Try again.");
                 }
             }
             
@@ -73,11 +77,11 @@ namespace yatzy
 
         public void DisplayDice(List<int> rollResults)
         {
-            Console.WriteLine("Here are your numbers: ");
+            _iConsoleService.Write("Here are your numbers: ");
 
             foreach (var number in rollResults)
             {
-                Console.WriteLine($"{number}");
+                _iConsoleService.Write($"{number}");
             }
         }
     }

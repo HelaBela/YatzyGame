@@ -9,3 +9,6 @@
 /Users/helena.franczak/RiderProjects/yatzy/yatzy/obj/Debug/netcoreapp2.2/yatzy.AssemblyInfo.cs
 /Users/helena.franczak/RiderProjects/yatzy/yatzy/obj/Debug/netcoreapp2.2/yatzy.dll
 /Users/helena.franczak/RiderProjects/yatzy/yatzy/obj/Debug/netcoreapp2.2/yatzy.pdb
+/Users/helena.franczak/RiderProjects/yatzy/yatzy/bin/Debug/netcoreapp2.2/Utility.dll
+/Users/helena.franczak/RiderProjects/yatzy/yatzy/bin/Debug/netcoreapp2.2/Utility.pdb
+/Users/helena.franczak/RiderProjects/yatzy/yatzy/obj/Debug/netcoreapp2.2/yatzy.csproj.CopyComplete

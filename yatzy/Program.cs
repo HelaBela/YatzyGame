@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Utility;
 
 namespace yatzy
 {
@@ -9,11 +10,12 @@ namespace yatzy
          
         static void Main(string[] args)
         {
+            var consoleService = new ConsoleOperations();
             
-            Console.WriteLine("PLease enter your name");
-            var name = Console.ReadLine();
-            var player = new Player(name);
-            var game = new Game(player);
+            consoleService.Write("PLease enter your name");
+            var name = consoleService.Read();
+            var player = new Player(name, consoleService);
+            var game = new Game(player, consoleService);
             game.Start();
 
         }

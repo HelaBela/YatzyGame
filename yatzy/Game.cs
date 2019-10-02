@@ -1,106 +1,86 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using Utility;
+
 
 namespace yatzy
 {
     public class Game
     {
+        private readonly IConsoleService _iConsoleService;
         private readonly Player _player;
-        public Dictionary<String, List<ICategory>> UsedCategories; 
+        private Dictionary<String, List<ICategory>> _usedCategories;
 
 
-        public Game(Player player)
+        public Game(Player player, IConsoleService iConsoleService)
         {
-            this._player = player;
-            UsedCategories = new Dictionary<String, List<ICategory>>();
-            UsedCategories.Add(_player.Name, new List<ICategory>());
+            _player = player;
+            _iConsoleService = iConsoleService;
+            _usedCategories = new Dictionary<String, List<ICategory>>();
+            _usedCategories.Add(_player.Name, new List<ICategory>());
         }
-
-        private static List<int>
-            _rolledDiceNumbers; //tomorrow, or later on... this should go to player, coz its a responsibility of player ot rememeber the rolled dice result
-
+        
+        
         public void Start()
         {
-            _rolledDiceNumbers = RollWithHeldNumbers(new List<int>());
 
-
-            RollDice();
+            
+            var rolledNumbers = RollDice();
 
             CategoryProvider categoryProvider = new CategoryProvider();
-            var availableCategories = categoryProvider.GetCategories(UsedCategories[_player.Name]);
+            var availableCategories = categoryProvider.GetCategories(_usedCategories[_player.Name]);
 
             var category =
                 _player.ChooseCategory(availableCategories,
-                    _rolledDiceNumbers); // check if this category was not used. Dont trust the player - do I still need to do that, how?
+                    rolledNumbers); // check if this category was not used. Dont trust the player
 
-            UsedCategories[_player.Name].Add(category);
+            _usedCategories[_player.Name].Add(category);
 
-            var score = GetCategoryScore(category);
-            Console.WriteLine($"Here is your score: {score}");
-            //_player.UpdateScore(TotalScore(category));
-
-            RollDiceSecondRound();
+            var score = GetCategoryScore(category, rolledNumbers);
+            _iConsoleService.Write($"Here is your score: {score}");
 
         }
+        
 
-        private void RollDiceSecondRound()
+        private List<int> RollDice()
         {
-
+            var rolledNumbers = new List<int>();
+            for (int i = 0; i < 5; i++)
+            {
+                rolledNumbers.Add(new Random().Next(1, 7));
+            }
+            var heldNumbers = new List<int>();
             for (int i = 0; i < 2; i++)
             {
-                var heldNumbers = _player.Hold(_rolledDiceNumbers);
-                _rolledDiceNumbers = RollWithHeldNumbers(heldNumbers);
+                heldNumbers.AddRange(_player.Hold(rolledNumbers));
+                rolledNumbers = RollWithHeldNumbers(heldNumbers, rolledNumbers);
             }
+
+            return rolledNumbers;
         }
 
-        private void RollDice()
+        private int GetCategoryScore(ICategory category, List<int> rolledNumbers)
         {
-            for (int i = 0; i < 2; i++)
-            {
-                var heldNumbers = _player.Hold(_rolledDiceNumbers);
-                _rolledDiceNumbers = RollWithHeldNumbers(heldNumbers);
-            }
-        }
-
-
-       // private int
-//            TotalScore(ICategory category) // the score should be tided to player. Game will update the score.player.getScore
-//        {
-//            var totalScore = 0;
-//
-//            foreach (var usedCategory in UsedCategories[_player])
-//            {
-//                totalScore += GetCategoryScore(usedCategory.CalculateScore(finalDiceNumbers:));
-//            }
-//
-//            return totalScore; //player.updateScore and tell player this is your score:
-//        }
-
-        private int GetCategoryScore(ICategory category)
-        {
-            var score = category.CalculateScore(_rolledDiceNumbers);
+            var score = category.CalculateScore(rolledNumbers);
 
             return score;
         }
 
 
-        private List<int> RollWithHeldNumbers(List<int> numbersToHold)
+        private List<int> RollWithHeldNumbers(List<int> positionsToHold, List<int> rolledNumbers)
         {
-            var result = new List<int>();
-
-            foreach (var number in numbersToHold)
+            var newRolledNumbers = rolledNumbers.ToList();
+            for (int i = 0; i <rolledNumbers.Count; i++)
             {
-                result.Add(_rolledDiceNumbers[number]);
+                if (!positionsToHold.Contains(i))
+                {
+                    newRolledNumbers[i] = new Random().Next(1, 7);
+                }
+                
             }
 
-            Random newNumber = new Random();
-
-            for (int i = 0; i <= 4 - numbersToHold.Count; i++)
-            {
-                result.Add(newNumber.Next(1, 7));
-            }
-
-            return result;
+            return newRolledNumbers;
         }
     }
 }
