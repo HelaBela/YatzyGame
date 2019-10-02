@@ -10,7 +10,8 @@ namespace yatzy
     {
         private readonly IConsoleService _iConsoleService;
         private readonly Player _player;
-        private Dictionary<String, List<ICategory>> _usedCategories;
+        private readonly Dictionary<String, List<ICategory>> _usedCategories;
+        private readonly CategoryProvider _categoryProvider;
 
 
         public Game(Player player, IConsoleService iConsoleService)
@@ -19,29 +20,28 @@ namespace yatzy
             _iConsoleService = iConsoleService;
             _usedCategories = new Dictionary<String, List<ICategory>>();
             _usedCategories.Add(_player.Name, new List<ICategory>());
+            _categoryProvider = new CategoryProvider();
         }
-        
-        
+
+
         public void Start()
         {
-
+            var availableCategories = _categoryProvider.GetCategories(_usedCategories[_player.Name]);
             
-            var rolledNumbers = RollDice();
+            while (availableCategories.Any())
+            {
+                var rolledNumbers = RollDice();
 
-            CategoryProvider categoryProvider = new CategoryProvider();
-            var availableCategories = categoryProvider.GetCategories(_usedCategories[_player.Name]);
+                var category = _player.ChooseCategory(availableCategories, rolledNumbers);
 
-            var category =
-                _player.ChooseCategory(availableCategories,
-                    rolledNumbers); // check if this category was not used. Dont trust the player
+                _usedCategories[_player.Name].Add(category);
 
-            _usedCategories[_player.Name].Add(category);
-
-            var score = GetCategoryScore(category, rolledNumbers);
-            _iConsoleService.Write($"Here is your score: {score}");
-
+                var score = GetCategoryScore(category, rolledNumbers);
+                _iConsoleService.Write($"Here is your score: {score}");
+                availableCategories = _categoryProvider.GetCategories(_usedCategories[_player.Name]);
+            }
         }
-        
+
 
         private List<int> RollDice()
         {
@@ -50,6 +50,7 @@ namespace yatzy
             {
                 rolledNumbers.Add(new Random().Next(1, 7));
             }
+
             var heldNumbers = new List<int>();
             for (int i = 0; i < 2; i++)
             {
@@ -71,13 +72,12 @@ namespace yatzy
         private List<int> RollWithHeldNumbers(List<int> positionsToHold, List<int> rolledNumbers)
         {
             var newRolledNumbers = rolledNumbers.ToList();
-            for (int i = 0; i <rolledNumbers.Count; i++)
+            for (int i = 0; i < rolledNumbers.Count; i++)
             {
                 if (!positionsToHold.Contains(i))
                 {
                     newRolledNumbers[i] = new Random().Next(1, 7);
                 }
-                
             }
 
             return newRolledNumbers;

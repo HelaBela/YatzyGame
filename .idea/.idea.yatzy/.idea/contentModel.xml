@@ -19,7 +19,6 @@
             </e>
           </e>
         </e>
-        <e p="Program.cs" t="Include" />
         <e p="Utility.csproj" t="IncludeRecursive" />
       </e>
       <e p="yatzy" t="IncludeRecursive">

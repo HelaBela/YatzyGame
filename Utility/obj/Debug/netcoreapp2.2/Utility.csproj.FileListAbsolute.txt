@@ -1,6 +1,4 @@
 /Users/helena.franczak/RiderProjects/yatzy/Utility/bin/Debug/netcoreapp2.2/Utility.deps.json
-/Users/helena.franczak/RiderProjects/yatzy/Utility/bin/Debug/netcoreapp2.2/Utility.runtimeconfig.json
-/Users/helena.franczak/RiderProjects/yatzy/Utility/bin/Debug/netcoreapp2.2/Utility.runtimeconfig.dev.json
 /Users/helena.franczak/RiderProjects/yatzy/Utility/bin/Debug/netcoreapp2.2/Utility.dll
 /Users/helena.franczak/RiderProjects/yatzy/Utility/bin/Debug/netcoreapp2.2/Utility.pdb
 /Users/helena.franczak/RiderProjects/yatzy/Utility/obj/Debug/netcoreapp2.2/Utility.csprojAssemblyReference.cache
