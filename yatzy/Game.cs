@@ -27,7 +27,7 @@ namespace yatzy
         public void Start()
         {
             var availableCategories = _categoryProvider.GetCategories(_usedCategories[_player.Name]);
-            
+
             while (availableCategories.Any())
             {
                 var rolledNumbers = RollDice();
@@ -37,7 +37,9 @@ namespace yatzy
                 _usedCategories[_player.Name].Add(category);
 
                 var score = GetCategoryScore(category, rolledNumbers);
+                
                 _iConsoleService.Write($"Here is your score: {score}");
+                
                 availableCategories = _categoryProvider.GetCategories(_usedCategories[_player.Name]);
             }
         }

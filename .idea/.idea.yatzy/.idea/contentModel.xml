@@ -24,8 +24,12 @@
       <e p="yatzy" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="Categories" t="Include">
+          <e p="ChanceCategory.cs" t="Include" />
+          <e p="FullHouseCategory.cs" t="Include" />
           <e p="ICategory.cs" t="Include" />
+          <e p="LargeStraightCategory.cs" t="Include" />
           <e p="PairCategory.cs" t="Include" />
+          <e p="SmallStraightCategory.cs" t="Include" />
           <e p="ThreeOfAKindCategory.cs" t="Include" />
           <e p="TwoPairsCategory.cs" t="Include" />
           <e p="YatzyCategory.cs" t="Include" />
@@ -48,11 +52,16 @@
       <e p="YatzyTest" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="category tests" t="Include">
+          <e p="ChanceCatTests.cs" t="Include" />
+          <e p="FullHouseCategoryTests.cs" t="Include" />
+          <e p="LargeStraightCategoryTests.cs" t="Include" />
           <e p="PairCategoryTest.cs" t="Include" />
+          <e p="SmallStraightCatTests.cs" t="Include" />
           <e p="ThreeOfAKindCategoryTests.cs" t="Include" />
           <e p="TwoPairsCategoryTest.cs" t="Include" />
           <e p="YatzyCategoryTests.cs" t="Include" />
         </e>
+        <e p="ConsoleOperationsStub.cs" t="Include" />
         <e p="GameTests.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">

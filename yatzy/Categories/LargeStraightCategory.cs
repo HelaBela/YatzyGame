@@ -4,30 +4,27 @@ using System.Linq;
 
 namespace yatzy
 {
-    public class ThreeOfAKindCategory : ICategory
-
+    public class LargeStraightCategory:ICategory
     {
-        public string Name => "Three of a Kind";
-
+        public string Name => "Large Straight";
         public int CalculateScore(List<int> finalDiceNumbers)
         {
             if (finalDiceNumbers == null)
             {
                 throw new ArgumentNullException(nameof(finalDiceNumbers));
             }
-
-            var three = finalDiceNumbers.GroupBy((x => x))
-                .Where(s => s.Count() > 2)
-                .OrderByDescending((o => o.Key))
-                .FirstOrDefault()?.Key;
-
-            if (three != null)
-            {
-                return three.Value *3;
-            }
             
+            var largeStraight = new List<int>(){2,3,4,5,6};
+
+            var isItALargeStraight = finalDiceNumbers.SequenceEqual(largeStraight);
+
+            if (isItALargeStraight)
+            {
+                return finalDiceNumbers.Sum();
+            }
 
             return 0;
+
         }
     }
 }

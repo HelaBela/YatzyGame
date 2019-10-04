@@ -24,11 +24,12 @@ namespace yatzy
 
             //"this is your final score... "
         }
+       
 
         public List<int> Hold(List<int> rollResults)
         {
             DisplayDice(rollResults);
-            _iConsoleService.Write("choose index number 0-4 of numbers you want to hold separated with a coma"); 
+            _iConsoleService.Write("choose index number 0-4 of numbers you want to hold separated with a coma");
 
             var numbersToHold = new List<int>();
 
@@ -43,6 +44,8 @@ namespace yatzy
 
             return numbersToHold;
         }
+        
+        
 
 
         public ICategory ChooseCategory(List<ICategory> availableCategories, List<int> rolledDice)
@@ -55,7 +58,7 @@ namespace yatzy
             {
                 _iConsoleService.Write($"{i}: {availableCategories[i].Name}");
             }
-            
+
             ICategory category = null;
             while (category == null)
             {
@@ -69,7 +72,7 @@ namespace yatzy
                     _iConsoleService.Write("Wrong choice. Try again.");
                 }
             }
-            
+
             return category;
         }
 

@@ -4,11 +4,9 @@ using System.Linq;
 
 namespace yatzy
 {
-    public class ThreeOfAKindCategory : ICategory
-
+    public class SmallStraightCategory : ICategory
     {
-        public string Name => "Three of a Kind";
-
+        public string Name => "Small Straight";
         public int CalculateScore(List<int> finalDiceNumbers)
         {
             if (finalDiceNumbers == null)
@@ -16,17 +14,15 @@ namespace yatzy
                 throw new ArgumentNullException(nameof(finalDiceNumbers));
             }
 
-            var three = finalDiceNumbers.GroupBy((x => x))
-                .Where(s => s.Count() > 2)
-                .OrderByDescending((o => o.Key))
-                .FirstOrDefault()?.Key;
+            var smallStraight = new List<int>() {1, 2, 3, 4, 5};
 
-            if (three != null)
+            var checkIfFinalDiceIsASmallStraight = finalDiceNumbers.SequenceEqual(smallStraight);
+
+            if (checkIfFinalDiceIsASmallStraight)
             {
-                return three.Value *3;
+                return finalDiceNumbers.Sum();
             }
             
-
             return 0;
         }
     }

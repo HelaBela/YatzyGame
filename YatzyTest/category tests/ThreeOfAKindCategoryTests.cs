@@ -30,6 +30,32 @@ namespace YatzyTest
             Assert.AreEqual(0, three.CalculateScore(diceNumbers));
             
         }
+        
+        [Test]
+        public void ReturnsSumIfThereAre3OfAKind()
+        {
+            //arrange
+            ICategory three = new ThreeOfAKindCategory();
+            List<int> diceNumbers = new List<int>() {1, 1, 1, 4, 5};
+
+            //act
+            //assert
+            Assert.AreEqual(3, three.CalculateScore(diceNumbers));
+            
+        }
+        
+        [Test]
+        public void ReturnsSumIfThereAre3OfAKindWhenAllAreSameNumbers()
+        {
+            //arrange
+            ICategory three = new ThreeOfAKindCategory();
+            List<int> diceNumbers = new List<int>() {2, 2, 2, 2, 2};
+
+            //act
+            //assert
+            Assert.AreEqual(6, three.CalculateScore(diceNumbers));
+            
+        }
 
         
     }
