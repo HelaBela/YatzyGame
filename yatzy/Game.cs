@@ -12,6 +12,7 @@ namespace yatzy
         private readonly Player _player;
         private readonly Dictionary<String, List<ICategory>> _usedCategories;
         private readonly CategoryProvider _categoryProvider;
+        private int _totalScore;
 
 
         public Game(Player player, IConsoleService iConsoleService)
@@ -21,6 +22,7 @@ namespace yatzy
             _usedCategories = new Dictionary<String, List<ICategory>>();
             _usedCategories.Add(_player.Name, new List<ICategory>());
             _categoryProvider = new CategoryProvider();
+            _totalScore = 0;
         }
 
 
@@ -37,12 +39,20 @@ namespace yatzy
                 _usedCategories[_player.Name].Add(category);
 
                 var score = GetCategoryScore(category, rolledNumbers);
-                
-                _iConsoleService.Write($"Here is your score: {score}");
-                
+
+
+                foreach (var usedCat in _usedCategories)
+                {
+                    _totalScore += score;
+                }
+
+
+                _iConsoleService.Write($"Here is your score for this round: {score}, your total score is: {_totalScore}");
+
                 availableCategories = _categoryProvider.GetCategories(_usedCategories[_player.Name]);
             }
         }
+
 
 
         private List<int> RollDice()
@@ -54,6 +64,8 @@ namespace yatzy
             }
 
             var heldNumbers = new List<int>();
+
+
             for (int i = 0; i < 2; i++)
             {
                 heldNumbers.AddRange(_player.Hold(rolledNumbers));
